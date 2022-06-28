@@ -28,6 +28,7 @@ class PlayerFlow:
             self.player.amount += 100
         
         self.property = self.board[next_position]
+        self.player.position = next_position
 
         logger.info(f"{self.player.profile_name} caiu em {self.property.name}.")
     
